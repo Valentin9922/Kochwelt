@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="ccs/body.css">
+    <title>Kochwelt</title>
+    <style>
+        table button {
+            width: 80px;
+            border-radius: 8px 8px 8px 8px;
+            background-color: green;
+        }
+
+        table button:hover {
+            background-color: rgb(0, 153, 0);
+        }
+
+        table input {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="recipe-main-container">
+        <div>
+            <H1>Kartoffelsuppe</H1>
+            <img class="dish-img" src="img/potatosoup.jpg" alt="">
+            <div class="preparation-icons">
+                <div class="bg-grey icons-container">
+                    <img src="img/icons/clock-regular" alt="">
+                    10 min.
+                </div>
+                <div class="bg-grey icons-container">
+                    <img src="img/icons/brain-solid.svg" alt="">
+                    simpel
+                </div>
+                <div class="bg-grey icons-container">
+                    <img src="img/icons/calendar-alt-regular" alt="">
+                    18.01.2022
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td>Zutaten für <input id="portions" type="number" min="1" value="4"><button
+                    onclick="calculatePortions('soup')">Portionen</button></td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-1"></span>g Kartoffel(n), festkochend</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-2"> </span> Möhre(n)</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-3"> </span> Zwiebel(n), groß</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-4"> </span>g Speck, gewürfelt</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-5"> </span> Liter Fleischbrühe</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-6"> </span> Liter Sahne</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-7"> </span> Mett-Würstchen</td>
+            </tr>
+        </table>
+        <h2>Zubereitung</h2>
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Arbeitszeit ca. 1 Stunde
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Gesamtzeit ca. 2 Stunden
+            </div>
+        </div>
+
+        <ol>
+            <li>
+                Die Kartoffeln und die Möhren schälen und in kleine Würfel schneiden. Den Lauch waschen und in feine
+                Streifen schneiden. Den Speck und die Zwiebeln in kleinere Würfel als das Gemüse schneiden und die
+                Würstchen in 1cm-Scheiben schneiden.
+            </li>
+            <br>
+            <li>
+                In einem Topf den Speck (nicht zu braun) auslassen, dann die Zwiebeln zusammen mit den Würstchen und dem
+                Lauch dazugeben. Wenn die Zwiebeln glasig sind, die Kartoffel- und die Gemüsewürfel untermengen, salzen
+                und pfeffern.
+            </li>
+            <br>
+            <li>
+                Bei kleiner Flamme ca. 10 Minuten dünsten lassen, dann die Fleischbrühe zugießen und alles gut
+                vermengen. Aufkochen, Deckel auflegen und bei kleiner Flamme ca. 1 Std. ziehen lassen. Zum Schluss die
+                Sahne einrühren und zum Andicken vorsichtig nach und nach das Kartoffelpüreepulver unterrühren.
+            </li>
+        </ol>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-picture">
+            <img src="img/valentin-pb.png" alt="">
+            <p>Valentin</p>
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

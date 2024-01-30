@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Kochwelt</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="recipe-main-container">
+        <h1>Französische Crossaints</h1>
+        <img class="dish-img" src="img/croissant.jpg" alt="">
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> 4 Stunden
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/brain-solid.svg" alt=""> leicht
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/calendar-alt-regular.svg" alt=""> 18.01.2021
+            </div>
+        </div>
+
+
+        <table>
+            <tr>
+                <td>Zutaten für <input id="portions" type="number" min="1" value="10"> <button
+                        onclick="calculatePortions('crossaints')">Portionen</button></td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-1">500</span> g Weizenmehl (Type 65 oder 550)</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-2"> 50</span> g Zucker</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-3"> 1</span> Ei (Gr. M)</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-4"> 10</span> g Hefe</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-5"> 20</span> g Butter</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-6"> 10</span> g Salz</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-7"> 210</span> ml Wasser</td>
+            </tr>
+
+
+        </table>
+
+        <h2>Zubereitung</h2>
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> ca. 5 Stunden
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Gesamtzeit 4-5 Stunden
+            </div>
+        </div>
+
+        <ol>
+            <li>
+                Mehl in eine Schüssel geben, Mulde eindrücken, die Hefe hineinbröckeln. Mit Zucker und Milch anrühren,
+                15 Min. gehen lassen. 25 g Butter in kleinen Flöckchen zugeben und alles zu einem weichen Teig
+                verkneten. Zugedeckt an einem warmen Ort 1 1/2 Std. gehen lassen. Durchkneten und zugedeckt 2 Std. kalt
+                stellen.
+            </li>
+            <br>
+            <li>Den gekühlten Teig auf wenig Mehl zu einem 1 cm dicken Quadrat ausrollen. Die restliche Butter in
+                Scheiben schneiden und in der Mitte des Teiges auslegen (Step 1). Die Teigecken zur Mitte hin falten,
+                sodass sich die Teigspitzen gerade treffen (Step 2). Etwas ausrollen, dann erneut die Ecken zur Mitte
+                falten. Teig in Folie wickeln und für 1 Std. kalt stellen. Danach erneut ausrollen und wie beschrieben
+                falten. Für 1 weitere Std. kalt stellen.</li>
+            <br>
+            <li>
+                Den Backofen auf 200° (Umluft 180°) vorheizen. Ein Backblech mit Backpapier belegen. Den Teig
+                messerrückendünn ausrollen und in längliche Dreiecke schneiden. Diese von der schmalen Seite her
+                aufrollen (Step 3) und zu Hörnchen biegen. Mit Abstand auf das Blech setzen und im Backofen (Mitte) 10
+                Min. backen. Hitze auf 180° (Umluft 160°) zurückschalten und die Croissants in weiteren 10 Min.
+                goldbraun backen.
+            </li>
+        </ol>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-picture">
+            <img src="img/valentin-pb.png">
+            <p>Valentin</p>
+        </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

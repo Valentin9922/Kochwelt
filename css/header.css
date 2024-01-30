@@ -1,0 +1,35 @@
+.header {
+    padding: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 6px;
+}
+
+.header-child {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.header-child a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-child a:hover {
+    color: green;
+    text-decoration: underline 4px;
+    text-underline-offset: 8px;
+}
+@media(max-width:1170px){
+    .header-child a{
+        display: none;
+    }
+    .header img{
+        justify-content: center;
+        width: 112%;
+    }
+}

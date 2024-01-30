@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Kochwelt</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="recipe-main-container">
+        <h1>Spaghetti Carbonara</h1>
+        <img class="dish-img" src="img/Spaghetti carbonara.jpg" alt="">
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> 10 Minuten
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/brain-solid.svg" alt=""> leicht
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/calendar-alt-regular.svg" alt=""> 19.01.2022
+            </div>
+        </div>
+
+
+        <table>
+            <tr>
+                <td>Zutaten für  <input id="portions" type="number" min="1" value="4"> <button onclick="calculatePortions('cabonara')" class="button">Potionen</button></td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-1">400 </span> g Spaghetti</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-2"> 100 </span> g Schinken, roher</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-3"> 4</span> g Eigelb</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-4"> 48 </span> g Butter</td>
+            </tr>
+            <tr>
+                <td> <span></span> Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td> <span></span> Muskat</td>
+            </tr>
+            <tr>
+                <td><span></span> Frisch geriebener Parmesan</td>
+            </tr>
+        </table>
+
+        <h2>Zubereitung</h2>
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Arbeitszeit ca. 10 Minuten
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Gesamtzeit c.a 20 Minuten
+            </div>
+        </div>
+        
+            <ol>
+                <li>
+                    Die Pasta in reichlich Salzwasser bissfest kochen. Den Schinken in Würfel schneiden und in wenig Butter anbraten.
+                </li>
+                <br>
+                <li>Eigelb in einer großen Schüssel mit Salz, Pfeffer und Muskat verquirlen. 
+                    Die Butter schaumig rühren und gut unter das Eigelb mischen. Die Schinkenwürfel 
+                    und den geriebenen Käse gründlich unterrühren.</li>
+                <br>
+                <li>
+                    Wenn die Nudeln gar sind, abgießen, sofort zu der Mischung in die Schüssel geben, 
+                    nochmal alles gründlich durchmischen, dann sogleich servieren.
+                </li>
+            </ol>
+        
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-picture">
+        <img src="img/valentin-pb.png" alt=""> <p>Valentin</p>
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

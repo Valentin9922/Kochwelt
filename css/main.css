@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.dish-img {
+    height: 250px;
+    width: 100%;
+    box-shadow: 1px 1px 10px 1px #000000;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1em;
+
+}
+
+.preparation-icons img {
+    height: 1em;
+    padding-right: 8px;
+}
+
+.preparation-icons {
+    width: fit-content;
+    padding: 1em 1em 1em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons-container {
+    padding: 8px;
+    margin-right: 1em;
+    border-radius: 8px;
+   
+}
+
+.bg-grey {
+    background-color: rgb(247, 247, 247);
+    }
+
+.recipe-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 5% 10% 5% 10%;
+    
+}
+
+td {
+    padding: 1em;
+    border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(247, 247, 247);
+}
+
+table input {
+    width: 60px;
+    border-radius: 8px;
+}
+
+ol {
+    padding-left: 12px;
+}
+
+.profile-picture img {
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 2em;
+}
+
+.profile-picture {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+button{
+    background-color: green;
+    color: white;
+    margin:0;
+    border:none;
+    padding:5px;
+
+
+
+}
+
+table button {
+    width: 80px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: green;
+}
+
+table button:hover {
+    background-color: rgb(0, 153, 0);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktoformular</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="script.js"></script>
+
+    <style>
+        body{
+            margin:0px;
+            font-family: 'Railway' , sans-serif;
+            
+
+        }
+
+        .impressum{
+            font-size: 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding:50px;
+        }
+        h1{
+            text-decoration: overline 4px green;
+            
+
+        }
+
+        
+
+        a{
+            color: black;
+        }
+
+        @media(max-width:1170px) {
+
+
+            .impressum{
+                font-size:23px ;
+                min-width: 60%;
+                text-align: center;
+                
+                margin-left: 0%;
+                margin-right: 0%;
+                
+                min-height: 100vh;
+            }
+            
+            
+
+
+
+
+        }
+
+    </style>
+</head>
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class='impressum'>
+        
+        
+        <h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Valentin Olberding <br> 
+        Surenkamp 3<br> 
+        45731 Waltrop <br> 
+        </p><p> <span class="bold"> <strong>Vertreten durch: </strong></span><br>
+        Valentin Olberding<br>
+        </p><p> <span class="bold"><strong>Kontakt:</strong></span> <br>
+        Telefon: +49 01573-3254222<br>
+        E-Mail: <a href='mailto:va.olberding@gmail.com'>va.olberding@gmail.com</a></br></p><p><span class="bold">
+        
+         </div>
+         <div w3-include-html="templates/footer.html"></div>
+</body>
+</html>

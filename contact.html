@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktoformular</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Railway', sans-serif;
+
+        }
+
+        .main-contact {
+
+
+            margin-top: 0;
+
+
+
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        h1 {
+            margin-top: 0px;
+            font-size: 50px;
+            text-decoration: underline green;
+
+
+        }
+
+        h5 {
+            font-size: 20px;
+            background-color: rgb(247, 247, 247);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0px;
+        }
+
+        @media(max-width:1170px) {
+            h1 {
+                font-size: 45px;
+            }
+        }
+
+
+
+
+
+        .input {
+
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            min-width: 50%;
+            border-radius: 10px;
+        }
+
+        .input:hover {
+            background-color: rgb(247, 247, 247);
+        }
+
+        .text-area {
+            min-width: 50%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            min-height: 100px;
+            resize: none;
+            margin: 8px 0;
+        }
+
+        .text-area:hover {
+            background-color: rgb(247, 247, 247);
+        }
+
+
+
+        ::placeholder {
+            color: green;
+            font-size: 15px;
+        }
+
+
+        .button {
+            color: white;
+            background-color: green;
+            font-size: 20px;
+
+            border: black solid 1.5px;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px
+        }
+
+        button:hover {
+            color: black;
+            background-color: rgba(0, 128, 0, 0.712);
+        }
+
+
+        @media(max-width:1170px) {
+
+            .main-contact {
+                margin: 0;
+                padding: 50px;
+
+
+            }
+
+
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <form class="main-contact" action="http://gruppe-156.developerakademie.net/send_mail.php" method="POST">
+        <br>
+        <br>
+        <h1>Kontaktformular</h1>
+
+        <h5>Ihr Name</h5>
+        <input name="name" class="input" placeholder="Name eingeben...">
+        <h5>Ihre Nachricht</h2>
+            <textarea name="message" class="text-area" placeholder="Nachricht eingeben..."></textarea>
+
+            <button class="button" type="submit"> E-mail Absenden</button>
+    </form>
+    <div w3-include-html="templates/footer.html"></div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+
+.main-recipe {
+   padding: 3% 10% 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.main-recipe-text-box {
+    word-wrap: break-word;
+    max-width: 500px;
+    text-align: center;
+}
+
+.main-recipe img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px #000000;
+   
+}
+
+.main-recipe button {
+    background-color: green;
+    border-radius: 8px;
+    padding: 0.5em 2em 0.5em 2em;
+    color: white;
+    font-weight: bold;
+  
+
+    
+
+}
+
+.main-recipe button:hover {
+    background-color: rgb(2, 117, 2);
+}
+
+.recipes-container {
+    padding: 3% 10% 3% 10%;
+    background-color: rgb(247, 247, 247);
+    font-weight: bold;
+}
+
+.recipes-container img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px #000000;
+    transition-duration: 75ms;
+    transition-timing-function: ease-in-out;
+    
+   
+
+}
+
+.recipes-container img:hover {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px #000000;
+    transition-duration: 75ms;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.10);
+    
+}
+
+.recipes-container a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.headline-2 {
+    justify-content: center;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+}
+
+
+
+.pan-vs-wok {
+    display: flex;
+    flex-direction: column;
+    padding:3% 10% 3% 10%;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.headline-wok{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: 1em 3em 1em 3em;
+    margin: 0;
+}
+.text-image{
+    display: flex;
+    margin: 50px 0px;
+    
+}
+
+ .image{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px #000000;
+ }
+
+ .text-wok{
+    padding-right: 5%;
+}
+
+ .recipes-boxes  {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+ }
+
+
+ @media(max-width:1170px) {
+     .main-recipe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .main-recipe img {
+        width: 100%;
+    }
+
+    .recipes-boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipes-boxes img {
+        width: 80%;
+    }
+    .text-image{
+        flex-direction: column;
+    }
+
+    .text-wok{
+        text-align: center;
+        padding:0px;
+        
+    }
+    .pan-vs-wok{
+        width: 80%;
+    }
+
+    .image{
+        display: none;
+    }
+
+ }
+
+
+

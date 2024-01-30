@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Kochwelt</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="recipe-main-container">
+        <h1>Paella</h1>
+        <img class="dish-img" src="img/paella-g590341a94_1280.jpg" alt="">
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> 30 Minuten
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/brain-solid.svg" alt=""> leicht
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/calendar-alt-regular.svg" alt=""> 18.01.2021
+            </div>
+        </div>
+
+
+        <table>
+            <tr>
+                <td>Zutaten für <input id="portions" type="number" min="1" value="4"> <button onclick="calculatePortions('paella')">Portionen</button></td>
+            </tr>
+            <tr>
+                <td><span  id="ingredient-1">400</span> g Meeresfrüchte</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-2"> 250</span> g Reis (Paella- oder Risottoreis)</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-3"> 80</span> g Erbsen, TK</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-4"> 2</span> Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-5">2</span> Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td> <span id="ingredient-6"> 1</span> Paprikaschote(n), rot</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-7"> 5</span> g Paprikapulver</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-8"> 5</span> g Salz</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-9"> 700</span> ml Gemüsebrühe</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient-10"> 700</span> ml Weißwein</td>
+            </tr>
+
+
+        </table>
+
+        <h2>Zubereitung</h2>
+        <div class="preparation-icons">
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> 30 Minuten
+            </div>
+            <div class="bg-grey icons-container">
+                <img src="img/icons/clock-regular.svg" alt=""> Gesamtzeit ca. 55 Minuten
+            </div>
+        </div>
+        
+            <ol>
+                <li>
+                    3 EL Olivenöl erhitzen, Zwiebeln und die Hälfte des kleingehackten Knoblauchs glasig dünsten. Den Reis hinzufügen, kurz mit andünsten und mit Safran/Kurkuma und Pfeffer würzen. Mit dem Wein und der Brühe auffüllen, zum Kochen bringen und unter Rühren garen.
+                </li>
+                <br>
+                <li>In einer separaten Pfanne 3 EL Olivenöl erhitzen. Nun die Meeresfrüchte, die in Streifen geschnittene Paprika, die Erbsen und den restlichen Knoblauch kurz anbraten und zu dem Reis geben. Alles so lange köcheln, bis die Brühe weitestgehend verkocht ist. Mit Paprika, Cayennepfeffer und Salz abschmecken.</li>
+                
+            </ol>
+        
+        <h3>Rezept erstellt von</h3>
+        <div class="profile-picture">
+        <img src="img/valentin-pb.png" alt=""> <p>Valentin</p>
+        </div>
+    </div>
+  
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>
